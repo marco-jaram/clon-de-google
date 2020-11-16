@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-derecha-seccion {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-derecha-seccion a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-derecha-seccion .menu-icono {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-derecha-seccion .foto {
+    background-image: url(/img/marco.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+main .main-logo {
+    margin: 0 auto;
+}
+
+main .main-logo img {
+    width: 150px;
+}
+
+.main-input {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-input-contenedor {
+    width: 310px;
+    border-radius: 100px;
+    border: 1px solid #e3e3e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input .lupa-icono {
+    background-image: url('/img/icons8-search-24.png');
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main .main-input .micro-icono {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    display: flex;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: rgb(69, 69, 71);
+    margin: 10px;
+}
+
+footer ul {
+    display: none;
+}
+
+.main-botones div button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border-color: rgb(211, 206, 206);
+    color: rgb(59, 59, 61);
+}
+
+@media (min-width:768px) {
+    .main-botones div button {
+        margin: 0px 10px;
+    }
+    main {
+        margin-top: 150px;
+        text-align: center;
+    }
+    main .main-logo img {
+        height: 92px;
+        width: 272px;
+        margin: 0 auto;
+    }
+    .main-input-contenedor:hover {
+        box-shadow: 0 1px 6px 0 #20212447;
+        border-color: #dfe1e500;
+    }
+    .main-botones {
+        display: flex;
+        justify-content: center;
+    }
+    .main-input {
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .main-input-contenedor {
+        width: 525px;
+        border-radius: 100px;
+        border: 1px solid #e3e3e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .main-input input {
+        width: 450px;
+        height: 40px;
+        border: none;
+        outline: none;
+    }
+    footer {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(234, 233, 240);
+    }
+    footer .footer-dere {
+        justify-self: right;
+    }
+    footer .footer-izq {
+        justify-self: left;
+    }
+    footer ul {
+        list-style-type: none;
+        display: flex;
+    }
+}
